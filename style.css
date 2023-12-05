@@ -1,59 +1,74 @@
+:root {
+  --color-gray-light: #fafafa;
+  --color-accent-primary: #84cc16;
+  --color-accent-shade1: #65a30d;
+}
+
+html {
+  font-size: 62.5%; /* 10px (62.5% of the default 16px) */
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: aqua;
-
+  /* font-family: ; */
+  background-color: var(--color-gray-light);
 }
 
 #app {
-  width: 1000px;
-  min-height: 75%;
-  padding: 10px;
+  width: 120rem;
   border-radius: 5px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid black;
 }
 
 /* NAVIGATION */
 
-.navigation {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 120%;
   /* background-color: yellow; 
    border: 1px solid black; */
 }
 
 .logo img {
-  height: 100px;
-  width: 100px;
+  height: 115px;
+  width: auto;
 }
 
 .navList a {
-  text-decoration: underline;
+  font-size: 2rem;
   color: black;
   padding: 5px;
+  text-decoration: none;
 }
 
 /* SECTIONS */
-.sections{
+.sections {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.textSection, .imgSection {
+h1 {
+  font-size: 6.4rem;
+}
+.sections p {
+  font-size: 2rem;
+}
+.textSection,
+.imgSection {
   width: 50%;
   padding: 5px;
 }
@@ -65,7 +80,7 @@ body {
 
 /* BUTTONS */
 
-.buttons{
+.buttons {
   display: flex;
   width: 100%;
   height: 150px;
@@ -73,12 +88,16 @@ body {
   align-items: center;
 }
 
-.btn{
+.btn {
   /* margin-top: 55px; */
   padding: 5px;
   border-radius: 5px;
   background-color: transparent;
-  color:black;
+  color: black;
   font-size: 1rem;
   cursor: pointer;
+}
+
+#bookNow {
+  background-color: var(--color-accent-shade1);
 }
