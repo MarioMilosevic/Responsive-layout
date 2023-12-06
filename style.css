@@ -39,6 +39,10 @@ nav {
   margin-bottom: 30px;
 }
 
+nav svg {
+  display: none;
+}
+
 .logo img {
   height: 115px;
   width: auto;
@@ -58,7 +62,6 @@ h1 {
   font-weight: 600;
 }
 
-
 .navList a:hover,
 .bookNow:hover {
   background-color: var(--color-accent-shade1);
@@ -66,7 +69,7 @@ h1 {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.cta{
+.cta {
   background-color: var(--color-accent-primary);
 }
 /* SECTIONS */
@@ -82,7 +85,7 @@ h1 {
 
 .textSection span {
   background-color: var(--color-accent-primary);
-  padding:1rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 10px;
 }
 
@@ -129,4 +132,19 @@ h1 {
 .bookNow {
   background-color: var(--color-accent-shade1);
   border: none;
+}
+
+/* ///////////////////////////////////// Media query 800px /////////////////////////////////////////// */
+@media only screen and (max-width: 800px) {
+  nav a {
+    display: none;
+  }
+   nav svg {
+    display: block;
+    cursor: pointer;
+  } 
+  h1 {
+    font-size: 4rem;
+    padding: 0.5rem;
+  }
 }
