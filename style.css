@@ -35,7 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 120%;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -136,10 +136,7 @@ h1 {
 
 /* ///////////////////////////////////// Media query 800px /////////////////////////////////////////// */
 @media only screen and (max-width: 800px) {
-  body{
-    /* width: 100%; */
-  }
-  #app{
+  #app {
     width: 100%;
   }
   nav {
@@ -154,20 +151,36 @@ h1 {
     width: 5rem;
     height: auto;
     cursor: pointer;
-  } 
+  }
   h1 {
     font-size: 4rem;
     padding: 0.5rem;
   }
+  .sections{
+    display: flex;
+    flex-direction: column;
+  }
+
 
   .sections p {
     font-size: 1.6rem;
   }
-  .textSection, .imgSection{
+  .textSection,
+  .imgSection {
     padding: 1rem;
+    width: 90%;
   }
-.bookNow, .learnMore {
-  font-size: 1.6rem;
-  padding: 0.5rem 1rem;
+  .bookNow,
+  .learnMore {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+  }
 }
+
+.transition {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: display 2s;
 }
+
