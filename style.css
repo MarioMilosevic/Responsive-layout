@@ -225,3 +225,10 @@ h1 {
   padding: 1rem 2rem;
   margin-top: 3rem;
 }
+
+/* LOGO GORE LIJEVO DA NAPRAVIM I DA DODAM DUGME ZA MICANJE OVOGA */
+.mobileLogo {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
