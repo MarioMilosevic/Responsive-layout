@@ -159,7 +159,15 @@ h1 {
     font-size: 4rem;
     padding: 0.5rem;
   }
-  .sections {
-    justify-content: space-between;
+
+  .sections p {
+    font-size: 1.6rem;
   }
+  .textSection, .imgSection{
+    padding: 1rem;
+  }
+.bookNow, .learnMore {
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+}
 }
