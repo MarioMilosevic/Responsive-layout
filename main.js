@@ -1,5 +1,6 @@
  "use strict";
 import { data } from "./constants";
+import { toggleClasses } from "./helpers";
 const {nav, svg, navList, logo, x} = data()
 
 svg.addEventListener("click", function () {
@@ -12,8 +13,4 @@ svg.addEventListener("click", function () {
 x.addEventListener("click", function () {
   toggleClasses(nav, navList, logo);
 });
-const toggleClasses = (navigation, list, img) => {
-  navigation.classList.toggle("mobileNav");
-  list.classList.toggle("mobileNavList");
-  img.classList.toggle("mobileLogo");
-};
+
