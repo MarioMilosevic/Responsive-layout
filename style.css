@@ -249,5 +249,4 @@ h1 {
   background-color: var(--color-accent-shade1);
   color: var(--color-gray-light);
   transition: background-color 0.3s, color 0.3s;
-
 }
