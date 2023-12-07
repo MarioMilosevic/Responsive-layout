@@ -1,16 +1,12 @@
- "use strict";
+"use strict";
 import { data } from "./constants";
-const {nav, svg, navList, logo, x} = data()
+const { nav, svg, navList, logo } = data();
+const xButton = document.querySelector(".xBtn");
 
 svg.addEventListener("click", function () {
-  x.classList.add("xButton");
-  x.textContent = "X";
-  nav.appendChild(x);
-  nav.style.transform = 'translateX(100%)'
+  nav.classList.add("navTranslate");
 });
 
-x.addEventListener("click", function () {
-    nav.removeChild(x)
-    nav.style.transform = 'translateX(-100%)';
+xButton.addEventListener("click", function () {
+  nav.classList.remove("navTranslate");
 });
-

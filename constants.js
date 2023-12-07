@@ -4,7 +4,9 @@ export function data() {
     const svg = document.querySelector("svg");
     const navList = document.querySelector(".navList");
     const logo = document.querySelector(".logo");
-    const x = document.createElement("button");
 
-    return {nav, svg, navList, logo, x}
+
+
+
+    return {nav, svg, navList, logo}
 } 
