@@ -20,7 +20,7 @@ body {
   align-items: flex-start;
   background-color: var(--color-gray-light);
   font-family: "Poppins", sans-serif;
-  height: 5000px;
+  height: 2000px;
 }
 
 #app {
@@ -124,20 +124,22 @@ h1 {
 }
 
 /* SLIDER SECTION */
+
 .sliderSection {
   margin-top: 8rem;
 }
 .slider {
   display: flex;
-  width: 90rem;
+  position: relative;
+  width: 50rem;
+  background-color: yellow;
+  overflow: hidden;
   margin: 10rem auto 2rem;
-  justify-content: space-around;
-  align-items: center;
 }
 
-.sliderContent{
+.sliderContent {
   width: 100%;
-  width: 50rem;
+  /* width: 50rem; */
 }
 
 .sliderImg {
@@ -145,14 +147,12 @@ h1 {
   position: relative;
   width: 50rem;
   height: 55rem;
-  overflow: hidden;
   border-radius: 2em;
 }
 .imgDiv {
   width: 100%;
   height: 60%;
   border-radius: 2em;
-
 }
 
 .content {
@@ -163,7 +163,6 @@ h1 {
   align-items: center;
   margin: 1rem auto;
   height: 40%;
-
 }
 .content img {
   width: 7rem;
@@ -177,7 +176,7 @@ h1 {
   width: 100%;
 }
 
-.namePlace{
+.namePlace {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -190,37 +189,23 @@ h1 {
 .img4 {
   width: 50rem;
   height: 30rem;
-  position: absolute;
   top: 0;
- border-radius: 2rem;
-}
-
-.img1 {
   left: 0;
+  border-radius: 2rem;
 }
 
-.img2 {
-  left: 100%;
-}
-
-.img3 {
-  left: 200%;
-}
-
-.img4 {
-  left: 300%;
-}
 .personInfo {
   width: 100%;
   margin-top: 1rem;
-  /* border: 1px solid black; */
   display: flex;
   height: 100%;
 }
 
-.location{
+.location {
   font-size: 1.2rem !important;
 }
+
+/* Slider buttons */
 
 .sliderButtons {
   display: flex;
@@ -235,7 +220,6 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
 }
-
 
 /* BUTTONS */
 
@@ -265,10 +249,22 @@ h1 {
 
 .leftBtn,
 .rightBtn {
-  width: 8rem;
-  height: 8rem;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
+  position: absolute;
+  background-color: orange;
 }
+
+.leftBtn{
+  top: 28%;
+  right: 94%;
+}
+.rightBtn{
+  top:28%;
+left: 94%;
+}
+
 
 /* ///////////////////////////////////// Media query 800px /////////////////////////////////////////// */
 @media only screen and (max-width: 800px) {
