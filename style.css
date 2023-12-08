@@ -129,14 +129,18 @@ h1 {
   margin-top: 8rem;
 }
 .slider {
+  border: 1px solid black;
   display: flex;
+  width:90rem;
+  height: 50rem;
+margin: 0 auto;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .slider img {
-  width: 100%;
+  width: 75%;
   height: 100%;
 }
 
@@ -168,8 +172,9 @@ h1 {
 
 .leftBtn,
 .rightBtn {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
 }
 
 /* ///////////////////////////////////// Media query 800px /////////////////////////////////////////// */
