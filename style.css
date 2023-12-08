@@ -127,27 +127,64 @@ h1 {
   margin-top: 8rem;
 }
 .slider {
-  /* border: 1px solid black; */
   display: flex;
   width: 90rem;
-  height: 30rem;
   margin: 10rem auto 2rem;
   justify-content: space-around;
   align-items: center;
 }
 
-.sliderImg {
-  overflow: hidden;
-  display: flex;
+.sliderContent{
+  width: 100%;
+  /* overflow: hidden; */
+  width: 50rem;
+  height: 10rem;
+}
 
+.sliderImg {
+  display: flex;
   position: relative;
   border-radius: 2em;
   width: 50rem;
   height: 30rem;
 }
+.imgDiv {
+  width: 100%;
+  height: 100%;
+}
 
-.sliderImg img {
-  /* position: absolute; */
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  /* border: 2px solid black; */
+  /* min-height: 100%; */
+}
+.content img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 5rem;
+}
+
+.content p {
+  display: flex;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.namePlace{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.img1,
+.img2,
+.img3,
+.img4 {
   width: 50rem;
   height: 30rem;
   position: absolute;
@@ -169,6 +206,13 @@ h1 {
 .img4 {
   left: 300%;
 }
+.personInfo {
+  width: 100%;
+  margin-top: 1rem;
+  /* border: 1px solid black; */
+  display: flex;
+  height: 100%;
+}
 
 .sliderButtons {
   display: flex;
@@ -183,6 +227,7 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
 }
+
 
 /* BUTTONS */
 
