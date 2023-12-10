@@ -133,7 +133,7 @@ nav {
   position: relative;
   width: 60rem;
   overflow: hidden;
-  margin: 4rem auto;
+  margin: 6rem auto;
 }
 .sliderSection h1 {
   font-size: 3.8rem;
@@ -275,6 +275,11 @@ nav {
   cursor: pointer;
   font-weight: 600;
   margin-right: 10px;
+}
+
+.filledBtn {
+  background-color: var(--color-accent-primary);
+  transition: 1s;
 }
 
 .bookNow {

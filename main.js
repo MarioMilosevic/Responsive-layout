@@ -16,6 +16,7 @@ const {
   button4,
 } = data();
 import { sliderDivTranslate } from "./helpers";
+import { removeClass } from "./helpers";
 
 svg.addEventListener("click", function () {
   nav.classList.add("navTranslate");
@@ -45,25 +46,29 @@ leftBtn.addEventListener("click", function () {
 
 sliderBtns.forEach((btn) => {
   btn.addEventListener("click", function () {
-    if (btn.id === 'btn1') {
+    if (btn.id === "btn1") {
       currentPosition = 0;
+      removeClass(sliderBtns, "filledBtn");
+      button1.classList.add("filledBtn");
       sliderDivTranslate(currentPosition, sliderImgDivs);
-    } else if (btn.id === 'btn2') {
+    } else if (btn.id === "btn2") {
       currentPosition = -130;
+      removeClass(sliderBtns, "filledBtn");
+      button2.classList.add("filledBtn");
       sliderDivTranslate(currentPosition, sliderImgDivs);
-    } else if (btn.id === 'btn3') {
+    } else if (btn.id === "btn3") {
       currentPosition = -260;
+      removeClass(sliderBtns, "filledBtn");
+      button3.classList.add("filledBtn");
       sliderDivTranslate(currentPosition, sliderImgDivs);
-    } else if (btn.id === 'btn4') {
+    } else if (btn.id === "btn4") {
       currentPosition = -390;
+      removeClass(sliderBtns, "filledBtn");
+      button4.classList.add("filledBtn");
       sliderDivTranslate(currentPosition, sliderImgDivs);
     }
   });
 });
-
-
-
-
 
 // button1.addEventListener('click', function(){
 //   currentPosition = 0
