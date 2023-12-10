@@ -10,6 +10,10 @@ const {
   sliderImgDivs,
   sliderBtns,
   xButton,
+  button1,
+  button2,
+  button3,
+  button4,
 } = data();
 import { sliderDivTranslate } from "./helpers";
 
@@ -21,7 +25,6 @@ xButton.addEventListener("click", function () {
   nav.classList.remove("navTranslate");
 });
 
-//ako je event target isti kao sacuvani target uzmi currentPosition i dodaj ga na svaki od divova, kao transform translate vrijednost dinamicki
 let currentPosition = 0;
 rightBtn.addEventListener("click", function () {
   currentPosition = currentPosition - 130;
@@ -31,8 +34,6 @@ rightBtn.addEventListener("click", function () {
   sliderDivTranslate(currentPosition, sliderImgDivs);
   console.log(currentPosition);
 });
-// });
-// ako je currentposition veci od nekog broja vrati na 0 a ako je manji od 0 vrati na taj najveci broj
 
 leftBtn.addEventListener("click", function () {
   currentPosition = currentPosition + 130;
@@ -41,3 +42,43 @@ leftBtn.addEventListener("click", function () {
   }
   sliderDivTranslate(currentPosition, sliderImgDivs);
 });
+
+sliderBtns.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    if (btn.id === 'btn1') {
+      currentPosition = 0;
+      sliderDivTranslate(currentPosition, sliderImgDivs);
+    } else if (btn.id === 'btn2') {
+      currentPosition = -130;
+      sliderDivTranslate(currentPosition, sliderImgDivs);
+    } else if (btn.id === 'btn3') {
+      currentPosition = -260;
+      sliderDivTranslate(currentPosition, sliderImgDivs);
+    } else if (btn.id === 'btn4') {
+      currentPosition = -390;
+      sliderDivTranslate(currentPosition, sliderImgDivs);
+    }
+  });
+});
+
+
+
+
+
+// button1.addEventListener('click', function(){
+//   currentPosition = 0
+//   sliderDivTranslate(currentPosition, sliderImgDivs)
+// })
+
+// button2.addEventListener('click', function(){
+//   currentPosition = -130
+//   sliderDivTranslate(currentPosition, sliderImgDivs)
+// })
+// button3.addEventListener('click', function(){
+//   currentPosition = -260
+//   sliderDivTranslate(currentPosition, sliderImgDivs)
+// })
+// button4.addEventListener('click', function(){
+//   currentPosition = -390
+//   sliderDivTranslate(currentPosition, sliderImgDivs)
+// })
