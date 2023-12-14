@@ -134,8 +134,16 @@ nav {
   display: flex;
   justify-items: center;
   align-items: center;
-  
+  margin: 6rem auto;
+  width: 60rem;
+  overflow: hidden;
+  background-color: yellow;
 }
+
+.slider1, .slider2, .slider3, .slider4 {
+  margin: 0 5rem;
+}
+
 /* .slider1 {
   display: flex;
   position: relative;
