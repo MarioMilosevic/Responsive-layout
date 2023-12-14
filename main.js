@@ -27,63 +27,49 @@ xButton.addEventListener("click", function () {
 });
 
 let currentPosition = 0;
-rightBtn.addEventListener("click", function () {
-  currentPosition = currentPosition - 130;
-  if (currentPosition < -390) {
-    currentPosition = 0;
-  }
-  sliderDivTranslate(currentPosition, sliderImgDivs);
-  console.log(currentPosition);
-});
 
-leftBtn.addEventListener("click", function () {
-  currentPosition = currentPosition + 130;
-  if (currentPosition > 0) {
-    currentPosition = -390;
-  }
-  sliderDivTranslate(currentPosition, sliderImgDivs);
-});
 
-sliderBtns.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    if (btn.id === "btn1") {
-      currentPosition = 0;
-      removeClass(sliderBtns, "filledBtn");
-      button1.classList.add("filledBtn");
-      sliderDivTranslate(currentPosition, sliderImgDivs);
-    } else if (btn.id === "btn2") {
-      currentPosition = -130;
-      removeClass(sliderBtns, "filledBtn");
-      button2.classList.add("filledBtn");
-      sliderDivTranslate(currentPosition, sliderImgDivs);
-    } else if (btn.id === "btn3") {
-      currentPosition = -260;
-      removeClass(sliderBtns, "filledBtn");
-      button3.classList.add("filledBtn");
-      sliderDivTranslate(currentPosition, sliderImgDivs);
-    } else if (btn.id === "btn4") {
-      currentPosition = -390;
-      removeClass(sliderBtns, "filledBtn");
-      button4.classList.add("filledBtn");
-      sliderDivTranslate(currentPosition, sliderImgDivs);
-    }
-  });
-});
+// rightBtn.addEventListener("click", function () {
+//   currentPosition = currentPosition - 100;
+//   if (currentPosition < -390) {
+//     currentPosition = 0;
+//   }
+//   sliderDivTranslate(currentPosition, sliderImgDivs);
+//   console.log(currentPosition);
+// });
 
-// button1.addEventListener('click', function(){
-//   currentPosition = 0
-//   sliderDivTranslate(currentPosition, sliderImgDivs)
-// })
+// leftBtn.addEventListener("click", function () {
+//   currentPosition = currentPosition + 130;
+//   if (currentPosition > 0) {
+//     currentPosition = -390;
+//   }
+//   sliderDivTranslate(currentPosition, sliderImgDivs);
+// });
 
-// button2.addEventListener('click', function(){
-//   currentPosition = -130
-//   sliderDivTranslate(currentPosition, sliderImgDivs)
-// })
-// button3.addEventListener('click', function(){
-//   currentPosition = -260
-//   sliderDivTranslate(currentPosition, sliderImgDivs)
-// })
-// button4.addEventListener('click', function(){
-//   currentPosition = -390
-//   sliderDivTranslate(currentPosition, sliderImgDivs)
-// })
+// sliderBtns.forEach((btn) => {
+//   btn.addEventListener("click", function () {
+//     if (btn.id === "btn1") {
+//       currentPosition = 0;
+//       removeClass(sliderBtns, "filledBtn");
+//       button1.classList.add("filledBtn");
+//       sliderDivTranslate(currentPosition, sliderImgDivs);
+//     } else if (btn.id === "btn2") {
+//       currentPosition = -130;
+//       removeClass(sliderBtns, "filledBtn");
+//       button2.classList.add("filledBtn");
+//       sliderDivTranslate(currentPosition, sliderImgDivs);
+//     } else if (btn.id === "btn3") {
+//       currentPosition = -260;
+//       removeClass(sliderBtns, "filledBtn");
+//       button3.classList.add("filledBtn");
+//       sliderDivTranslate(currentPosition, sliderImgDivs);
+//     } else if (btn.id === "btn4") {
+//       currentPosition = -390;
+//       removeClass(sliderBtns, "filledBtn");
+//       button4.classList.add("filledBtn");
+//       sliderDivTranslate(currentPosition, sliderImgDivs);
+//     }
+//   });
+// });
+
+

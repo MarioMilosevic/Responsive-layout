@@ -126,8 +126,11 @@ nav {
 /* SLIDER SECTION */
 
 .sliderSection {
+  position: relative;
+  /* background-color: aqua; */
   margin-top: 8rem;
   width: 100%;
+  /* height: 100%; */
 }
 
 .sliders {
@@ -137,10 +140,13 @@ nav {
   margin: 6rem auto;
   width: 60rem;
   overflow: hidden;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
-.slider1, .slider2, .slider3, .slider4 {
+.slider1,
+.slider2,
+.slider3,
+.slider4 {
   margin: 0 5rem;
 }
 
@@ -176,7 +182,7 @@ nav {
 }
 
 .sliderImgTranslate {
-  transform: translateX(-130%);
+  transform: translateX(-100%);
 }
 
 .imgDiv {
@@ -237,8 +243,8 @@ nav {
 
 .leftBtn,
 .rightBtn {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   cursor: pointer;
   position: absolute;
   z-index: 100;
@@ -246,10 +252,12 @@ nav {
 }
 
 .leftBtn {
-  right: 95%;
+  left: 25%;
+  top: 38%;
 }
 .rightBtn {
-  left: 95%;
+  right: 25%;
+  top: 38%;
 }
 
 /* Slider buttons */
