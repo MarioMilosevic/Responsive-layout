@@ -14,8 +14,9 @@ const {
   button2,
   button3,
   button4,
+  sliderDivArr,
 } = data();
-import { sliderDivTranslate } from "./helpers";
+import { moveSlideDiv } from "./helpers";
 import { removeClass } from "./helpers";
 
 svg.addEventListener("click", function () {
@@ -26,25 +27,23 @@ xButton.addEventListener("click", function () {
   nav.classList.remove("navTranslate");
 });
 
-let currentPosition = 0;
+let currentPosition = 1;
+
+rightBtn.addEventListener("click", function () {
+  if(currentPosition !== sliderDivArr.length) {
+    moveSlideDiv(currentPosition, sliderDivArr)
+    currentPosition++
+  } else if(currentPosition === sliderDivArr.length){
+    currentPosition = 0
+    moveSlideDiv(currentPosition, sliderDivArr)
+    currentPosition++
+  }})
 
 
-// rightBtn.addEventListener("click", function () {
-//   currentPosition = currentPosition - 100;
-//   if (currentPosition < -390) {
-//     currentPosition = 0;
-//   }
-//   sliderDivTranslate(currentPosition, sliderImgDivs);
-//   console.log(currentPosition);
-// });
 
-// leftBtn.addEventListener("click", function () {
-//   currentPosition = currentPosition + 130;
-//   if (currentPosition > 0) {
-//     currentPosition = -390;
-//   }
-//   sliderDivTranslate(currentPosition, sliderImgDivs);
-// });
+
+
+// KASNIJE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // sliderBtns.forEach((btn) => {
 //   btn.addEventListener("click", function () {
@@ -71,5 +70,3 @@ let currentPosition = 0;
 //     }
 //   });
 // });
-
-

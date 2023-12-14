@@ -13,7 +13,11 @@ export function data() {
   const button2 = document.querySelector("#btn2");
   const button3 = document.querySelector("#btn3");
   const button4 = document.querySelector("#btn4");
-
+  const slider1 = document.querySelector(".slider1");
+  const slider2 = document.querySelector(".slider2");
+  const slider3 = document.querySelector(".slider3");
+  const slider4 = document.querySelector(".slider4");
+  const sliderDivArr = [slider1, slider2, slider3, slider4];
   return {
     nav,
     svg,
@@ -24,7 +28,15 @@ export function data() {
     sliderImgDivs,
     sliderBtns,
     xButton,
-    button1, button2, button3, button4
+    button1,
+    button2,
+    button3,
+    button4,
+    slider1,
+    slider2,
+    slider3,
+    slider4,
+    sliderDivArr
   };
 }
 
