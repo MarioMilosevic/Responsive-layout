@@ -127,14 +127,22 @@ nav {
 
 .sliderSection {
   margin-top: 8rem;
+  width: 100%;
 }
-.slider1 {
+
+.sliders {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  
+}
+/* .slider1 {
   display: flex;
   position: relative;
   width: 60rem;
   overflow: hidden;
   margin: 6rem auto;
-}
+} */
 .sliderSection h1 {
   font-size: 3.8rem;
   margin-bottom: 2rem;
@@ -154,8 +162,8 @@ nav {
   width: 50rem;
   height: 70rem;
   border-radius: 2em;
-  margin-right: 10rem;
-  margin-left: 5rem;
+  /* margin-right: 10rem;
+  margin-left: 5rem; */
   transition: ease-out 1s;
 }
 
