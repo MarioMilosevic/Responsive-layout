@@ -27,21 +27,58 @@ xButton.addEventListener("click", function () {
   nav.classList.remove("navTranslate");
 });
 
-let currentPosition = 1;
+let currentPosition = 0;
 
-rightBtn.addEventListener("click", function () {
-  if(currentPosition !== sliderDivArr.length) {
-    moveSlideDiv(currentPosition, sliderDivArr)
-    currentPosition++
-  } else if(currentPosition === sliderDivArr.length){
+const nextSlide = () => {
+  if(currentPosition === sliderDivArr.length - 1){
     currentPosition = 0
-    moveSlideDiv(currentPosition, sliderDivArr)
+  }else {
     currentPosition++
-  }})
+  }
+  moveSlideDiv(currentPosition, sliderDivArr)
+ }
+
+ const prevSlide = () => {
+  if(currentPosition ===  0){
+    currentPosition = sliderDivArr.length - 1
+  }else {
+    currentPosition--
+  }
+  moveSlideDiv(currentPosition, sliderDivArr)
+ }
+
+ rightBtn.addEventListener('click', nextSlide)
+ leftBtn.addEventListener('click', prevSlide)
 
 
 
 
+// rightBtn.addEventListener("click", function () {
+//   if (currentPosition < sliderDivArr.length) {
+//     moveSlideDiv(currentPosition, sliderDivArr);
+//     currentPosition++;
+//     console.log(currentPosition);
+//   } else {
+//     currentPosition = 0;
+//     moveSlideDiv(currentPosition, sliderDivArr);
+//     currentPosition++;
+//     console.log(currentPosition);
+//   }
+// });
+// // ako je manji od 1 da bude 4
+// leftBtn.addEventListener("click", function () {
+//   currentPosition--
+//   if (currentPosition < 1) {
+//     currentPosition = 4
+//     currentPosition--
+//     moveSlideDiv(currentPosition, sliderDivArr);
+//     console.log(currentPosition);
+//   } else if(currentPosition === 1){
+//     currentPosition--
+//     // ne umijem rijesit za spas
+//     moveSlideDiv(currentPosition, sliderDivArr);
+//   }
+// });
 
 // KASNIJE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

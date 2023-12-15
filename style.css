@@ -139,7 +139,7 @@ nav {
   align-items: center;
   margin: 8rem auto;
   width: 60rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: yellow; */
 }
 

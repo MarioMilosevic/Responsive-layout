@@ -8,6 +8,10 @@ export const moveSlideDiv = (position, arr) => {
   })
 }
 
+export const moveSlide = () => {
+  
+}
+
 // rightBtn.addEventListener("click", function () {
 //   if(currentPosition !== sliderDivArr.length) {
 //     sliderDivArr.forEach((slide) => {
