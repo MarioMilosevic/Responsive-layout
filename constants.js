@@ -9,10 +9,10 @@ export function data() {
   const sliderImgDivs = document.querySelectorAll(".sliderImg");
   const sliderBtns = document.querySelectorAll(".sliderBtns");
   const xButton = document.querySelector(".xBtn");
+  const button0 = document.querySelector("#btn0");
   const button1 = document.querySelector("#btn1");
   const button2 = document.querySelector("#btn2");
   const button3 = document.querySelector("#btn3");
-  const button4 = document.querySelector("#btn4");
   const slider1 = document.querySelector(".slider1");
   const slider2 = document.querySelector(".slider2");
   const slider3 = document.querySelector(".slider3");
@@ -28,10 +28,10 @@ export function data() {
     sliderImgDivs,
     sliderBtns,
     xButton,
+    button0,
     button1,
     button2,
     button3,
-    button4,
     slider1,
     slider2,
     slider3,
@@ -40,5 +40,4 @@ export function data() {
   };
 }
 
-// sve ih ubacim u ovaj izmedju linija, i onda 234 poceram desno sa pozicijom apsolute, i onda overflow tu,
-// pa kasnije na klik, da se pomjeraju
+

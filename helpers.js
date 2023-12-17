@@ -1,16 +1,12 @@
 "use strict";
 
-
-
 export const moveSlideDiv = (position, arr) => {
   arr.forEach(el => {
     el.style.transform = `translateX(-${position * 100}%)`
   })
 }
 
-export const moveSlide = () => {
-  
-}
+
 
 // rightBtn.addEventListener("click", function () {
 //   if(currentPosition !== sliderDivArr.length) {

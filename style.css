@@ -127,10 +127,8 @@ nav {
 
 .sliderSection {
   position: relative;
-  /* background-color: aqua; */
   margin-top: 8rem;
   width: 100%;
-  /* height: 100%; */
 }
 
 .sliders {
@@ -139,28 +137,19 @@ nav {
   align-items: center;
   margin: 8rem auto;
   width: 60rem;
-  /* overflow: hidden; */
-  /* background-color: yellow; */
+  overflow: hidden;
 }
 
 .slider1,
 .slider2,
 .slider3,
 .slider4 {
-  /* margin: 0 5rem; */
   width: 60rem;
   padding: 4rem;
   margin: 0 auto;
   transition: ease-out 1s;
 }
 
-/* .slider1 {
-  display: flex;
-  position: relative;
-  width: 60rem;
-  overflow: hidden;
-  margin: 6rem auto;
-} */
 .sliderSection h1 {
   font-size: 3.8rem;
   margin-bottom: 2rem;
@@ -396,41 +385,8 @@ nav {
     padding: 0.5rem 1rem;
   }
 }
-/* .mobileNav {
-  display: flex;
-  background-color: #fff;
-  opacity: 1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  transform: translateX(100%);
-  transition:ease-in-out 1s;
-} */
-/* .mobileNavList {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-} */
-/* .mobileNavList a {
-  display: block;
-  padding: 1rem 2rem;
-  margin-top: 3rem;
-} */
-
-/* LOGO GORE LIJEVO DA NAPRAVIM I DA DODAM DUGME ZA MICANJE OVOGA */
-/* .mobileLogo {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-} */
 
 .xButton {
-  /* display: none; */
   width: 75px;
   height: 75px;
   background-color: var(--color-accent-primary);
