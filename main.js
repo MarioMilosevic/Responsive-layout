@@ -30,55 +30,57 @@ xButton.addEventListener("click", function () {
 let currentPosition = 0;
 
 const nextSlide = () => {
-  if(currentPosition === sliderDivArr.length - 1){
-    currentPosition = 0
-  }else {
-    currentPosition++
+  if (currentPosition === sliderDivArr.length - 1) {
+    currentPosition = 0;
+  } else {
+    currentPosition++;
   }
-  moveSlideDiv(currentPosition, sliderDivArr)
- }
+  moveSlideDiv(currentPosition, sliderDivArr);
+  
+};
 
- const prevSlide = () => {
-  if(currentPosition ===  0){
-    currentPosition = sliderDivArr.length - 1
-  }else {
-    currentPosition--
+const prevSlide = () => {
+  if (currentPosition === 0) {
+    currentPosition = sliderDivArr.length - 1;
+  } else {
+    currentPosition--;
   }
-  moveSlideDiv(currentPosition, sliderDivArr)
- }
+  moveSlideDiv(currentPosition, sliderDivArr);
+};
 
- rightBtn.addEventListener('click', nextSlide)
- leftBtn.addEventListener('click', prevSlide)
-
-
-
-
-
+rightBtn.addEventListener("click", nextSlide);
+leftBtn.addEventListener("click", prevSlide);
 
 // KASNIJE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 sliderBtns.forEach((btn) => {
   btn.addEventListener("click", function () {
-    if (btn.id === "btn1") {
-      currentPosition = 0;
-      removeClass(sliderBtns, "filledBtn");
-      button1.classList.add("filledBtn");
-      sliderDivTranslate(currentPosition, sliderImgDivs);
-    } else if (btn.id === "btn2") {
-      currentPosition = -130;
-      removeClass(sliderBtns, "filledBtn");
-      button2.classList.add("filledBtn");
-      sliderDivTranslate(currentPosition, sliderImgDivs);
-    } else if (btn.id === "btn3") {
-      currentPosition = -260;
-      removeClass(sliderBtns, "filledBtn");
-      button3.classList.add("filledBtn");
-      sliderDivTranslate(currentPosition, sliderImgDivs);
-    } else if (btn.id === "btn4") {
-      currentPosition = -390;
-      removeClass(sliderBtns, "filledBtn");
-      button4.classList.add("filledBtn");
-      sliderDivTranslate(currentPosition, sliderImgDivs);
+    removeClass(sliderBtns, "filledBtn");
+    currentPosition = btn.id;
+    if (btn.id === String(currentPosition)) {
+      sliderBtns[currentPosition].classList.add("filledBtn");
+      console.log("da");
     }
   });
 });
+
+// sliderBtns.forEach((btn) => {
+//   btn.addEventListener("click", function () {
+//     if (btn.id === "btn1") {
+//       currentPosition = 0;
+//       removeClass(sliderBtns, "filledBtn");
+//       button1.classList.add("filledBtn");
+//     } else if (btn.id === "btn2") {
+//       currentPosition = -130;
+//       removeClass(sliderBtns, "filledBtn");
+//       button2.classList.add("filledBtn");
+//     } else if (btn.id === "btn3") {
+//       currentPosition = -260;
+//       removeClass(sliderBtns, "filledBtn");
+//       button3.classList.add("filledBtn");
+//     } else if (btn.id === "btn0") {
+//       currentPosition = -390;
+//       removeClass(sliderBtns, "filledBtn");
+//       button0.classList.add("filledBtn");
+//     }
+//   });
+// });
