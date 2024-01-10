@@ -36,7 +36,7 @@ const nextSlide = () => {
     currentPosition++;
   }
   moveSlideDiv(currentPosition, sliderDivArr);
-  
+
 };
 
 const prevSlide = () => {
@@ -59,6 +59,7 @@ sliderBtns.forEach((btn) => {
     if (btn.id === String(currentPosition)) {
       sliderBtns[currentPosition].classList.add("filledBtn");
       console.log("da");
+      moveSlideDiv(currentPosition, sliderDivArr)
     }
   });
 });
