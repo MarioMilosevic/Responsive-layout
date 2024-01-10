@@ -36,7 +36,8 @@ const nextSlide = () => {
     currentPosition++;
   }
   moveSlideDiv(currentPosition, sliderDivArr);
-
+  removeClass(sliderBtns, "filledBtn");
+  sliderBtns[currentPosition].classList.add("filledBtn");
 };
 
 const prevSlide = () => {
@@ -46,6 +47,8 @@ const prevSlide = () => {
     currentPosition--;
   }
   moveSlideDiv(currentPosition, sliderDivArr);
+  removeClass(sliderBtns, "filledBtn");
+  sliderBtns[currentPosition].classList.add("filledBtn");
 };
 
 rightBtn.addEventListener("click", nextSlide);
